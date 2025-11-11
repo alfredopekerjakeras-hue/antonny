@@ -1,0 +1,259 @@
+//* -------------------------------
+   🌐 Reset & Dasar
+---------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    line-height: 1.7;
+    background-color: #f5f7fa;
+    color: #222;
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------
+   🌐 Navbar
+---------------------------------- */
+.navbar {
+    background: linear-gradient(90deg, #22313f 0%, #1b2c2d 100%);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar-logo h2 {
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Menu */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 18px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.navbar-item a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------------
+   🌐 Section Konten
+---------------------------------- */
+section, .dom-s, .dom-s2, .dom-s3, .dom-s4, .dom-s5 {
+    width: 85%;
+    margin: 120px auto 60px;
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dom-s h1, .dom-s2 h1, h2, h3 {
+    color: #1c3f5f;
+    margin-bottom: 20px;
+    text-align: left;
+    border-left: 6px solid #1c3f5f;
+    padding-left: 15px;
+}
+
+.dom-s p, .dom-s2 p, section p {
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+/* Ordered & Unordered lists */
+ol, ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+ol li, ul li {
+    margin-bottom: 10px;
+}
+
+/* -------------------------------
+   🌐 Hero Section (Header)
+---------------------------------- */
+.hero-section {
+    margin-top: 90px;
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(120deg, #e3ebf3 0%, #cfe0ee 100%);
+    color: #1c3f5f;
+    border-bottom: 4px solid #1c3f5f;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* -------------------------------
+   🌐 Tabel
+---------------------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+table th {
+    background-color: #1c3f5f;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f0f4f8;
+}
+
+table tr:hover {
+    background-color: #e0ebf7;
+    transition: background-color 0.3s ease;
+}
+
+/* -------------------------------
+   🌐 Footer
+---------------------------------- */
+.footer {
+    background-color: #1b2c2d;
+    color: #fff;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 50px;
+    font-size: 0.95rem;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+/* -------------------------------
+   🌐 Responsiveness
+---------------------------------- */
+@media (max-width: 900px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-item a {
+        padding: 8px 14px;
+        font-size: 0.95rem;
+    }
+
+    section, .dom-s, .dom-s2 {
+        width: 92%;
+        padding: 30px 25px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-section {
+        padding: 60px 10px;
+    }
+
+    .navbar-logo h2 {
+        font-size: 1.5rem;
+    }
+
+    table th, table td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+.hero-img {
+    width: 120px;
+    margin-left: 20px;
+}
+
+.section-img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.center-img {
+    display: block;
+    margin: 15px auto;
+    width: 100px;
+    height: auto;
+    opacity: 0.95;
+}
+
+.section-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.section-text {
+    flex: 1;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .hero-img, .section-img, .center-img {
+        width: 80px;
+    }
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
